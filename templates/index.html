@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type to search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            /* background-image: url(https://img.freepik.com/free-photo/ultra-detailed-nebula-a); */
+            background-size: cover;
+            background-color: black;
+            overflow:hidden;
+        }
+
+        #form {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        #input {
+            height: 8vh;
+            width: 30vw;
+            border-radius: 50px;
+            text-align: center;
+            animation-name: inputc;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        #btn {
+            height: 9vh;
+            width: 10vw;
+            border-radius: 50px;
+            animation-name: inputc;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        #heading {
+            text-align: center;
+            margin-top: 1%;
+        }
+
+        #heading>h1 {
+            display: inline;
+        }
+
+        #tnak1 {
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes colour1 {
+            14.28% {
+                color: violet;
+            }
+
+            28.57% {
+                color: indigo;
+            }
+
+            42.85% {
+                color: blue;
+            }
+
+            57.14% {
+                color: green;
+            }
+
+            71.42% {
+                color: yellow;
+            }
+
+            85.71% {
+                color: orange;
+            }
+
+            100% {
+                color: red;
+            }
+        }
+
+        #tnak2 {
+            text-align: center;
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+
+        #tnak3 {
+            text-align: center;
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+
+        }
+
+        #tnak4 {
+            text-align: center;
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+
+        }
+
+        #tnak5 {
+            text-align: center;
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 4s;
+        }
+
+        #img2 {
+            height: 100px;
+            width: 100px;
+            position: relative;
+            rotate: 90deg;
+            left: 0px;
+            animation-name: fadeInAnimation;
+            animation-iteration-count: infinite;
+            animation-duration: 7s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes fadeInAnimation {
+            0% {
+                left: 0px
+            }
+
+            100% {
+                left: 100%;
+            }
+        }
+
+        @keyframes inputc {
+            0% {
+                border-top: 8px solid yellowgreen;
+                border-left: 8px solid crimson;
+                border-bottom: 8px solid magenta;
+                border-right: 8px solid cyan;
+            }
+
+            25% {
+                border-top: 8px solid crimson;
+                border-left: 8px solid magenta;
+                border-bottom: 8px solid cyan;
+                border-right: 8px solid yellowgreen;
+            }
+
+            50% {
+                border-top: 8px solid magenta;
+                border-left: 8px solid cyan;
+                border-bottom: 8px solid yellowgreen;
+                border-right: 8px solid crimson;
+            }
+
+            75% {
+                border-top: 8px solid cyan;
+                border-left: 8px solid yellowgreen;
+                border-bottom: 8px solid crimson;
+                border-right: 8px solid magenta;
+            }
+
+            100% {
+                border-top: 8px solid cyan;
+                border-left: 8px solid yellowgreen;
+                border-bottom: 8px solid crimson;
+                border-right: 8px solid magenta;
+            }
+        }
+        .test {
+            position:relative;
+            left: 100px;
+            top: 100px;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            border: 2px solid black;
+            animation-name: astroids;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            background-color: blue;
+            box-shadow: 10px 10px red;
+        }
+        @keyframes astroids {
+            0% {
+                left: 100px;
+                top: 100px;
+            }
+
+            10% {
+                left: 0px;
+                top: 200px;
+            }
+
+            20% {
+                left: 300px;
+                top: 10px;
+            }
+
+            30% {
+                left: 500px;
+                top: 900px
+            }
+
+            40% {
+                left: 600px;
+                top: 100px;
+            }
+
+            50% {
+                left: 670px;
+                top: 600px;
+            }
+
+            70% {
+                left: 30px;
+                top: 120px;
+            }
+
+            80% {
+                left: 500px;
+                top: 500px;
+            }
+
+            90% {
+                left: 1200px;
+                top: 200px;
+            }
+        }
+        #test1{
+            animation-delay:1s ;
+        }
+        #test2{
+            animation-delay:2s ;
+        }
+        #test3{
+            animation-delay:3s ;
+        }
+        #test4{
+            animation-delay:4s ;
+        }
+        #test5{
+            animation-delay:5s ;
+        }
+        #test6{
+            animation-delay:6s ;
+        }
+        #test7{
+            animation-delay:7s ;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1 id="tnak1">Type </h1>
+        <h1 id="tnak2">And </h1>
+        <h1 id="tnak3">Enter </h1>
+        <h1 id="tnak4">To</h1>
+        <h1 id="tnak5">Search</h1>
+    </div>
+    <div id="form">
+        <form action="/" method="post">
+            <input id="input" type="text" name="query" placeholder="Enter to Search">
+            <input id="btn" type="submit" value="Search">
+        </form>
+    </div>
+    <div class="test"></div>
+    <div class="test" id="test1"></div>
+    <div class="test" id="test2"></div>
+    <div class="test" id="test3"></div>
+    <div class="test" id="test4"></div>
+    <div class="test" id="test5"></div>
+    <div class="test" id="test6"></div>
+    <div class="test" id="test7"></div>
+    <img id="img2" src="https://www.pngmart.com/files/22/Rocket-Transparent-Isolated-Images-PNG.png" alt="rocket">
+
+</body>
+<script>
+    const relevant = function (query, link) {
+        fetch("/relevant", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "query": query,
+                "link": link
+            })
+        });
+    }
+</script>
+
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type to search</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bolder;
+            font-style: italic;
+            background-color: black;
+            overflow: hidden;
+
+        }
+        #form{
+            height: 75vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        #input {
+            height: 8vh;
+            width: 30vw;
+            border-radius: 50px;
+            text-align: center;
+            animation-name: inputc;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+
+        #btn {
+            height: 9vh;
+            width: 10vw;
+            border-radius: 50px;
+            animation-name: inputc;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+        }
+        #heading{
+            text-align: center;
+            margin-top: 1%;
+        }
+        #heading>h1{
+            display: inline;
+        }
+        #tnak1{
+            text-align: center;
+            animation-name: colour1;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes colour1 {
+                14.28% {
+                color: yellow;
+            }
+
+            28.57% {
+                color: orange;
+            }
+
+            42.85% {
+                color: red;
+            }
+
+            57.14% {
+                color: violet;
+            }
+
+            71.42% {
+                color: cyan;
+            }
+
+            85.71% {
+                color: blue;
+            }
+
+            100% {
+                color: green;
+            }
+            
+        }
+        #tnak2{
+            text-align: center;
+            animation-name: colour2;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+        }
+        @keyframes colour2 {
+            14.28% {
+                color: yellow;
+            }
+
+            28.57% {
+                color: orange;
+            }
+
+            42.85% {
+                color: red;
+            }
+
+            57.14% {
+                color: violet;
+            }
+
+            71.42% {
+                color: cyan;
+            }
+
+            85.71% {
+                color: blue;
+            }
+
+            100% {
+                color: green;
+            }
+        }
+        #tnak3{
+            text-align: center;
+            animation-name: colour3;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+
+        }
+        @keyframes colour3 {
+            14.28% {
+                color: yellow;
+            }
+
+            28.57% {
+                color: orange;
+            }
+
+            42.85% {
+                color: red;
+            }
+
+            57.14% {
+                color: violet;
+            }
+
+            71.42% {
+                color: cyan;
+            }
+
+            85.71% {
+                color: blue;
+            }
+
+            100% {
+                color: green;
+            }
+        }
+        #tnak4{
+            text-align: center;
+            animation-name: colour4;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 3s;
+
+        }
+        @keyframes colour4 {
+            14.28% {
+                color: yellow;
+            }
+
+            28.57% {
+                color: orange;
+            }
+
+            42.85% {
+                color: red;
+            }
+
+            57.14% {
+                color: violet;
+            }
+
+            71.42% {
+                color: cyan;
+            }
+
+            85.71% {
+                color: blue;
+            }
+
+            100% {
+                color: green;
+            }
+            
+        }
+        #tnak5{
+            text-align: center;
+            animation-name: colour5;
+            animation-duration: 7s;
+            animation-iteration-count: infinite;
+            animation-delay: 4s;
+        }
+        @keyframes colour5 {
+            14.28% {
+                color: yellow;
+            }
+
+            28.57% {
+                color: orange;
+            }
+
+            42.85% {
+                color: red;
+            }
+
+            57.14% {
+                color: violet;
+            }
+
+            71.42% {
+                color: cyan;
+            }
+
+            85.71% {
+                color: blue;
+            }
+
+            100% {
+                color: green;
+            }
+        }
+        img{
+            height:100px;
+            width: 100px;
+            position: relative;
+            rotate: 90deg;
+            left: 0%;
+            animation: fadeInAnimation;
+            animation-iteration-count:infinite;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+        }
+        @keyframes fadeInAnimation {
+    0% {
+        left:0%
+    }
+    100% {
+        left:100%
+     }
+}
+        @keyframes inputc{
+            0%{
+                border-top:8px solid yellowgreen ;
+                border-left:8px solid crimson ;
+                border-bottom:8px solid magenta ;
+                border-right:8px solid cyan ;
+            }
+            25%{
+                border-top:8px solid crimson ;
+                border-left:8px solid magenta ;
+                border-bottom:8px solid cyan ;
+                border-right:8px solid yellowgreen ;
+            }
+            50%{
+                border-top:8px solid magenta ;
+                border-left:8px solid cyan ;
+                border-bottom:8px solid yellowgreen ;
+                border-right:8px solid crimson ;
+            }
+            75%{
+                border-top:8px solid cyan ;
+                border-left:8px solid yellowgreen ;
+                border-bottom:8px solid crimson ;
+                border-right:8px solid magenta ;
+            }
+            100%{
+                border-top:8px solid cyan ;
+                border-left:8px solid yellowgreen ;
+                border-bottom:8px solid crimson ;
+                border-right:8px solid magenta ;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="heading">
+        <h1 id="tnak1">Type </h1>
+        <h1 id="tnak2">And </h1>
+        <h1 id="tnak3">Enter </h1>
+        <h1 id="tnak4">To</h1>
+        <h1 id="tnak5">Search</h1>
+    </div>
+    <div id="form">
+        <form action="/" method="post">
+            <input id="input" type="text" name="query" placeholder="Enter to Search">
+            <input id="btn" type="submit" value="Search">
+        </form>
+    </div>
+    <img src=" href={{ url_for('static', filename='images/rocket.jpg') }}" alt="rocket">
+   
+</body>
+<script>
+    const relevant = function (query, link) {
+        fetch("/relevant", {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                "query": query,
+                "link": link
+            })
+        });
+    }
+</script>
+
+</html>

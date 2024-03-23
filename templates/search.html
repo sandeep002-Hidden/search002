@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <input id="input" type="text" name="query" placeholder=Enter to Search>
+        <input id="btn" type="submit" value="Search">
+      </form> 
+    <p class="site stylee">{{rank}}: {link} <span class="rel-button" onclick='relevant("{query}", "{link}");'></span></p>
+<a class="stylee" href="{link}">{title}</a>
+<p class="snippet stylee">{snippet}</p>
+</body>
+</html>
